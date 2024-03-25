@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import { Mode } from "./Mode";
+import { Mode } from "../domain/Mode";
 
 export interface ModeState {
   value: Mode;

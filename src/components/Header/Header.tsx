@@ -2,9 +2,9 @@ import { FC } from "react";
 import { Mode } from "../../domain/Mode";
 import styles from "./Header.module.scss";
 import classNames from "classnames";
-import { setActiveMode } from "../../domain/modeSlice";
+import { setActiveMode } from "../../reducers/modeSlice";
 import { useSelector, useDispatch } from "react-redux";
-import type { RootState } from "../../../store";
+import type { RootState } from "../../store";
 
 const Header: FC = () => {
   const activeMode = useSelector((state: RootState) => state.mode.value);

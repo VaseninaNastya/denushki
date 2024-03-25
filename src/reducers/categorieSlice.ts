@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import { CategorieLabels } from "./CategorieLabels";
+import { CategorieLabels } from "../domain/CategorieLabels";
 
 export interface CategorieState {
   value: CategorieLabels;

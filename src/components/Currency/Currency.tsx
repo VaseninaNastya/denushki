@@ -3,7 +3,7 @@ import { currencyLabels } from "../../domain/CurrencyLabels";
 import Tab from "../Tab";
 import { useSelector, useDispatch } from "react-redux";
 import type { RootState } from "../../store";
-import { setActiveCurrency } from "../../domain/currencySlice";
+import { setActiveCurrency } from "../../reducers/currencySlice";
 import { CurrencyLabels } from "../../domain/CurrencyLabels";
 import styles from "./Currency.module.scss";
 

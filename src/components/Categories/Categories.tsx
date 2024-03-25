@@ -3,7 +3,7 @@ import { categorieLabels } from "../../domain/CategorieLabels";
 import styles from "./Categories.module.scss";
 import { useSelector, useDispatch } from "react-redux";
 import type { RootState } from "../../store";
-import { setActiveCategorie } from "../../domain/categorieSlice";
+import { setActiveCategorie } from "../../reducers/categorieSlice";
 import { CategorieLabels } from "../../domain/CategorieLabels";
 import Tab from "../Tab";
 

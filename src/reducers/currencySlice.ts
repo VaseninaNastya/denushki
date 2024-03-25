@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import { CurrencyLabels } from "./CurrencyLabels";
+import { CurrencyLabels } from "../domain/CurrencyLabels";
 
 export interface CurrencyState {
   value: CurrencyLabels;

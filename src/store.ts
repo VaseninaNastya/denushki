@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import modeReducer from "./domain/modeSlice";
-import categorieReducer from "./domain/categorieSlice";
-import currencyReducer from "./domain/currencySlice";
+import modeReducer from "./reducers/modeSlice";
+import categorieReducer from "./reducers/categorieSlice";
+import currencyReducer from "./reducers/currencySlice";
 
 const store = configureStore({
   reducer: {
