@@ -26,12 +26,12 @@
 
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 20px;
 }
 
 ::-webkit-scrollbar-track {
   background-color: #8ee4af29;
-  width: 10px;
+  width: 20px;
 }
 
 ::-webkit-scrollbar-thumb {

@@ -1,0 +1,9 @@
+.footer {
+  padding: 10px;
+  display: flex;
+  button {
+    flex-grow: 1;
+    font-weight: 600;
+    background-color: #5cdb95;
+  }
+}

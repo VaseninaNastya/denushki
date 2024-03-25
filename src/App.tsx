@@ -1,16 +1,18 @@
 import "./App.css";
-import SpendingSection from "./Spending/components/SpendingSection";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import SpendingSection from "./components/SpendingSection";
+import IncomeSection from "./components/IncomeSection";
+import Page from "./components/Page";
+import { useSelector } from "react-redux";
+import type { RootState } from "./store";
+import { Mode } from "./domain/Mode";
 
 function App() {
+  const activeMode = useSelector((state: RootState) => state.mode.value);
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/spending" element={<SpendingSection />} />
-        {/* <Route path="/" element={<Navigate to={getDeliveriesListPath()} />} />
-    <Route path="*" element={<Page404 />} /> */}
-      </Routes>
-    </BrowserRouter>
+    <Page>
+      {activeMode === Mode.Spending && <SpendingSection />}
+      {activeMode === Mode.Income && <IncomeSection />}
+    </Page>
   );
 }
 
