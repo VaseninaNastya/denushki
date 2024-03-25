@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  background-color: #05386b;
+  padding-top: 10px;
+}
+.modeTab {
+  padding: 10px 30px;
+  border-radius: 10px 10px 0 0;
+  background-color: #379683;
+}
+.activeModeTab {
+  background-color: #edf5e1;
+  font-weight: 800;
+}

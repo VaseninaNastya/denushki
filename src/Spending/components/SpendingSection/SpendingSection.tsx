@@ -2,20 +2,23 @@ import { FC } from "react";
 import styles from "./SpendingSection.module.scss";
 import Categories from "../Categories";
 import Currency from "../Currency";
+import Page from "../../../Core/components/Page";
 
 const SpendingSection: FC = () => (
-  <form className={styles.container}>
-    <div className={styles.wrapper}>
-      <Categories />
-      <div>
-        <input />
+  <Page>
+    <form className={styles.container}>
+      <div className={styles.wrapper}>
+        <Categories />
+        <div className={styles.container}>
+          <input name="spending" id="spending" />
+          <Currency />
+        </div>
       </div>
-      <div>
-        <Currency />
+      <div className={styles.footer}>
+        <button>Contribute</button>
       </div>
-    </div>
-    <button>Contribute</button>
-  </form>
+    </form>
+  </Page>
 );
 
 export default SpendingSection;
